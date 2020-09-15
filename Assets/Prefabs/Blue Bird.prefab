@@ -15,6 +15,10 @@ GameObject:
   - component: {fileID: 5675516701648312337}
   - component: {fileID: 8981385802660261841}
   - component: {fileID: 5152701470733945545}
+  - component: {fileID: 702776365}
+  - component: {fileID: 702776366}
+  - component: {fileID: 702776367}
+  - component: {fileID: 702776368}
   m_Layer: 11
   m_Name: Blue Bird
   m_TagString: Player
@@ -193,7 +197,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -291,7 +295,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 5675516701648312337}
-  anim: {fileID: 7379498855102354212}
   forwardSpeed: 2
   bounceSpeed: 5
+--- !u!114 &702776365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7379498855102354235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52cca936eea7b74babcfa5be14ce6a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 8981385802660261841}
+  flapClick: {fileID: 8300000, guid: fb395c378fd8ef5479c759fc766ceeae, type: 3}
+  pointClip: {fileID: 8300000, guid: 8b12000ec4295b242bd43c1e50f4016f, type: 3}
+  dieClip: {fileID: 8300000, guid: 879bda920eb086344aa9ca96c965016c, type: 3}
+--- !u!114 &702776366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7379498855102354235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5878ec519f62fd645930b5cc0b2e05fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   isAlive: 0
+--- !u!114 &702776367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7379498855102354235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500e032c574b738438bd3140b311901c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Score: 0
+--- !u!114 &702776368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7379498855102354235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96959f88de300bf478aff8acadd06b73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  birdAnimation: {fileID: 7379498855102354212}

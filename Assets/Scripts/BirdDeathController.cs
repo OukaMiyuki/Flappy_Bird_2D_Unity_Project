@@ -20,8 +20,9 @@ public class BirdDeathController : MonoBehaviour {
         if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Pipe") {
             if (isAlive) {
                 isAlive = false;
-                BirdAnimationController.instance.playDeadAnimation();
-                SoundPlayerController.instance.playDeathSound();
+                BirdAnimationController.instance.playDeadAnimation(); // play death animation
+                SoundPlayerController.instance.playDeathSound(); // play the death sound
+                GameplayController.instance.ShowPlayerDeathScore(BirdScoreController.instance.Score); // set the last score when player is dead
             }
         }
     }
